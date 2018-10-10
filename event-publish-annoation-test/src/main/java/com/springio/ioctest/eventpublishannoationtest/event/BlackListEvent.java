@@ -1,4 +1,4 @@
-package com.springio.ioctest.event;
+package com.springio.ioctest.eventpublishannoationtest.event;
 
 import org.springframework.context.ApplicationEvent;
 

@@ -17,7 +17,7 @@ public class EventPublishTestApplicationTests {
 	public void contextLoads() {
 		ApplicationContext  context = new AnnotationConfigApplicationContext(MyConfig.class);
 		EmailService  email = (EmailService)context.getBean("emailService");
-		email.sendEmail("known.spammer@example.org222","aaaaaa");
+		email.sendEmail("known.spammer@example.org","aaaaaa");
 
 	}
 

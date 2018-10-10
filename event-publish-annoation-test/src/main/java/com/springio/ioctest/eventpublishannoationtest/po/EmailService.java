@@ -1,9 +1,8 @@
-package com.springio.ioctest.po;
+package com.springio.ioctest.eventpublishannoationtest.po;
 
-import com.springio.ioctest.event.BlackListEvent;
+import com.springio.ioctest.eventpublishannoationtest.event.BlackListEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 

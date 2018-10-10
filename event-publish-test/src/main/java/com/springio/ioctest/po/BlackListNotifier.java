@@ -20,7 +20,14 @@ public class BlackListNotifier implements ApplicationListener<BlackListEvent> {
     @Override
     public void onApplicationEvent(BlackListEvent event) {
         // notify appropriate parties via notificationAddress...
-        System.out.println("onApplicationEvent:"+event.getSource());
+        System.out.println("---------onApplicationEvent:"+event.getClass().getName());
+        if(event instanceof BlackListEvent){
+            BlackListEvent e = (BlackListEvent)event;
+            System.out.println(e.getAddress()+"  "+e.getContent());
+
+        }
+
+
     }
 
 
